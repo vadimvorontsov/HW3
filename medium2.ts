@@ -6,8 +6,6 @@
 type FIXME = any;
 
 // Hint: infer
-export const getDefaultProps = <T>(
-  component: React.ComponentType<T>
-): FIXME => {
+export const getDefaultProps = <T>(component: React.ComponentType<T>): Record<keyof T, T> => {
   return component.defaultProps;
 };
